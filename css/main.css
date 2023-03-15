@@ -144,7 +144,7 @@ background: linear-gradient(-90deg, rgb(255, 255, 255) -20%, rgb(255, 255, 255) 
 .flex-container-col div{
   padding: 2%;
 }
-.flex-container-col input[type=text]{
+.flex-container-col input[type=text],.flex-container-col input[type=password]{
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -248,6 +248,7 @@ div> label, div>h1{
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 
   @media screen and (max-width: 790px) {
