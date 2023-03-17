@@ -11,7 +11,6 @@ nav {
   background-color: rgba(255, 255, 255, 0.95);
   color: #000000;
   padding: 10px 10px 0px 10px;
-  /*top right bottom left */
   border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
@@ -191,7 +190,7 @@ div p {
 }
 
 .img-login {
-  width: 80%;
+  width: 87.5%;
   height: 100%;
 }
 
@@ -321,7 +320,7 @@ input[type=submit] {
   margin: 0px;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
-  font-size: 80%;
+  font-size: 0.9rem;
   color: rgb(52, 52, 52);
   text-align: left;
   margin-left: 6%;
@@ -350,8 +349,8 @@ hr {
   margin-bottom: 0px;
 }
 
-#card1 {
-  margin-top: 8%;
+#card-deck1,#card-deck2,#card-deck3 {
+  margin: 8% 2% 2% 2%;  /*top right bottom left */
 }
 
 .text-center,
@@ -542,7 +541,7 @@ input[type=submit]:hover {
     width: 75%;
   }
 
-  #card1 {
+  #card-deck1 {
     margin-top: 12%;
   }
 
@@ -593,7 +592,7 @@ input[type=submit]:hover {
     margin-top: 44%;
   }
 
-  #card1,
+  #card-deck1,
   #About-section1 {
     margin-top: 46%;
   }
@@ -667,7 +666,7 @@ input[type=submit]:hover {
     margin-top: 47%;
   }
 
-  #card1,
+  #card-deck1,
   #About-section1 {
     margin-top: 61%;
   }
@@ -693,7 +692,7 @@ input[type=submit]:hover {
     margin-top: 77%;
   }
 
-  #card1 {
+  #card-deck1 {
     margin-top: 78%;
   }
 
