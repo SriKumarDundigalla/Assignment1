@@ -7,38 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../css/main.css" rel="stylesheet" />
   <style>
-    .wrapper,
-    html,
-    body {
-      height: 85%;
-      margin: 0;
-    }
+   
 
-    .wrapper {
-      display: flex;
-      flex-direction: column;
-      margin-top: 7.99%;
-      margin-bottom: 4%
-      
-    }
-
-    #row {
-      flex: 2;
-      display: flex;
-    }
-
-    #col1 {
-      flex: 0 0 50%;
-      min-height: 20%;
-      background-image:linear-gradient(-90deg, rgb(20,212,216) -20%, rgb(0,113,235) 80%);
-      
-    }
-
-    #col2 {
-      background-color: orange;
-      flex: 1 1;
-      min-height: 20%;
-    }
   </style>
 </head>
 
@@ -47,76 +17,80 @@
   <div class="fixed-nav">    
     <nav>
     <div class="left">
-      <a href="../index.html"><img src="../img/Frame 1.png" alt="Not found"></a>
+      <a href="../index.html"><img src="../img/logo.png" alt="Not found"></a>
     </div>
     <div class="right">
-      <a href="#">About</a>
-      <a href="#">Course</a>
-      <a href="#">Services</a>
-      <a href="#">reviews</a>
+      <a href="./about.html">About Us</a>
+      <a href="./course.html">Course</a>
+      <a href="./reviews.html">reviews</a>
+      <a href="./login.html" id="login">Login</span></a>
+      <a href="./singup.html" id="sing-up">SIGN UP</a>
+      
     </div>
   </nav>
 </div>
-
-  <div class="wrapper">
-    <div id="row">
-      <div id="col1">
-        <div class="flex-container-col">
-            <div>
-                <h1 class="text-center">Login</h1>
-            </div>
-            <div>
-              <form>
-                <div>
-                  <label for="fname">Email</label>
-                  <br>
-                  <input type="text" id="fname" name="fname">
-                </div>
-                <div>
-                  <label for="fpass">Password</label>
-                  <br>
-                  <input type="password" id="fpass" name="fpass">
-                </div>
-                <div>
-                  <input type="submit" value="Login">
-                </div>
-              </form>
-            </div>
-        </div>
+<div class="flex-container" id="section1-login">
+  <div class="flex-item-left">
+    <div class="flex-container-col">
+      <div>
+          <h1 class="text-center">Login</h1>
       </div>
-      <div id="col2"><img src="../img/login.jpg" class="singup-box1-img"></div>
-    </div>
+      <div>
+        <form>
+          <div>
+            <label for="fname">Email</label>
+            <br>
+            <input type="text" id="fname" name="fname">
+          </div>
+          <div>
+            <label for="fpass">Password</label>
+            <br>
+            <input type="password" id="fpass" name="fpass">
+          </div>
+          <div>
+            <input type="submit" value="Login">
+          </div>
+          <p class="ml-3">Not a member?<a  href="./singup.html">Sing Up Now</a></p>
+        </form>
+       
+      </div>
   </div>
-  <footer>
-     <div class="flex-container">
-      <div class="flex-item-left">
-        <h5 >
-          About The Learning Place
-        </h5>
-        <ul>
-          <li><a>Teach/Train</a></li>
-          <li><a>Careers</a></li>
-          <li><a>Related links</a></li>
-        </ul>
-      </div>
-      <div class="flex-item-left">
-        <h5>
-            Support
-        </h5>
-        <ul>
-          <li><a>Contact us</a></li>
-          <li><a>Terms of Use</a></li>
-          <li><a>Frequently asked questions (FAQ)</a></li>
-        </ul>
-        <div>
-          <img src="../img/instagram-2016-6.svg" class="footer-logo" style="margin-left: 0px;">
-          <img src="../img/twitter-6.svg" class="footer-logo">
-          <img src="../img/facebook-3-2.svg" class="footer-logo">
-          <img src="../img/youtube-icon.svg" class="footer-logo">
-        </div>
-      </div>
+  </div>
+  <div class="flex-item-left">
+      <img class="img-login" src="../img/section-login.png" alt="">
+  </div>
+</div>
+
+<footer>
+  <div class="flex-container">
+   <div class="flex-item-left">
+     <h5 class="footer-h5">
+       About The Learning Place
+     </h5>
+     <ul>
+       <li><a>Teach/Train</a></li>
+       <li><a>Careers</a></li>
+       <li><a>Related links</a></li>
+     </ul>
+   </div>
+   <div class="flex-item-left">
+     <h5 class="footer-h5">
+         Support
+     </h5>
+     <ul>
+       <li><a>Contact us</a></li>
+       <li><a>Terms of Use</a></li>
+       <li><a>Frequently asked questions (FAQ)</a></li>
+     </ul>
+     <div>
+       <img src="../img/instagram-2016-6.svg" class="footer-logo" style="margin-left: 0px;">
+       <img src="../img/twitter-6.svg" class="footer-logo">
+       <img src="../img/facebook-3-2.svg" class="footer-logo">
+       <img src="../img/youtube-icon.svg" class="footer-logo">
      </div>
-  </footer>
+   </div>
+  </div>
+</footer> 
  
 
 </body>
