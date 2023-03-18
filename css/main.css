@@ -784,11 +784,27 @@ input[type=submit]:hover {
 
 }
 
-@media (max-width:420px) {
+@media screen and (max-width:420px) {
   #About-section1 {
     margin-top: 77%;
   }
 
+  #card-deck1 {
+    margin-top: 78%;
+  }
+
+  #section1-signup,
+  #section1-login {
+    margin-top: 70%;
+  }
+}
+@media screen and (max-width:370px) {
+  #About-section1 {
+    margin-top: 69%;
+  }
+   #section1 {
+    margin-top: 71%;
+  }
   #card-deck1 {
     margin-top: 78%;
   }
