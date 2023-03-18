@@ -273,6 +273,13 @@ div p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: justify;
 }
+img + P
+{
+  margin-left: 3%;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
 
 .flex-container-col {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -706,7 +713,7 @@ input[type=submit]:hover {
   }
 
   .About-img {
-    width: 35%;
+    width: 50%;
   }
 
   .testimonial-heading h1 {
@@ -804,6 +811,9 @@ input[type=submit]:hover {
   #section1-login {
     margin-top: 70%;
   }
+  .About-img {
+    width: 84%;
+  }
 }
 @media screen and (max-width:370px) {
   #About-section1 {
@@ -819,5 +829,8 @@ input[type=submit]:hover {
   #section1-signup,
   #section1-login {
     margin-top: 70%;
+  }
+  .About-img {
+    width: 93%;
   }
 }
