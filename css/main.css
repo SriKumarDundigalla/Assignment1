@@ -183,7 +183,7 @@ div p {
 
 }
 
-#section1-singup {
+#section1-signup {
   margin-top: 7%;
   background: linear-gradient(-90deg, rgb(231 231 231) -45%, rgb(0, 179, 255) 200%);
 
@@ -554,7 +554,7 @@ input[type=submit]:hover {
   }
 
   #About-section1,
-  #section1-singup,
+  #section1-signup,
   #section1-login {
     margin-top: 35%;
   }
@@ -676,7 +676,7 @@ input[type=submit]:hover {
   }
 
 
-  #section1-singup,
+  #section1-signup,
   #section1-login {
     margin-top: 45%;
   }
@@ -696,7 +696,7 @@ input[type=submit]:hover {
     margin-top: 78%;
   }
 
-  #section1-singup,
+  #section1-signup,
   #section1-login {
     margin-top: 70%;
   }
