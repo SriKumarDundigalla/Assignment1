@@ -350,8 +350,8 @@ input[type=submit] {
 .About-img {
   border: 2px solid black;
   border-radius: 60%;
-  width: 50%;
-  height: 86%;
+  width: 360px;
+  height: 360px;
 
 }
 
