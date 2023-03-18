@@ -1,31 +1,32 @@
 /*Home page , Navbar and Footer*/
 
+/*Below is Universal selector that sets width and height of all elements that will be calculated based on the content, padding, and border altogether.*/
 * {
   box-sizing: border-box;
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.95);
-  color: #000000;
-  padding: 10px 10px 0px 10px;
-  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  display: flex;  /* turns the element into a flex container, which allows for flexible layout options */
+  justify-content: space-between; /*For navigation menus with several links, the "justify-content: space-between" property equally spaces child items horizontally.*/
+  align-items: center; /*vertically centers child elements in the <nav> element.*/
+  background-color: rgba(255, 255, 255, 0.95); /* makes the element's background white with 95% opacity, creating a semi-transparent look.*/
+  color: #000000; /*makes fonts black.*/
+  padding: 10px 10px 0px 10px; /*establishes the space between the element's content and its border, with 10 pixels on the top, right, and left sides and no padding on the bottom.*/
+  border-bottom: 1px solid rgba(0, 0, 0, .1); /*adds a light gray solid border to the bottom of the element.*/
 }
 
 footer {
-  color: #ffffff;
-  background-color: #000000;
-  border: 1px solid rgba(171, 171, 171, 0.1);
+  color: #ffffff; /*sets the text color to white*/
+  background-color: #000000; /* black background-color*/
+  border: 1px solid rgba(171, 171, 171, 0.1); /* creates a semi-transparent effect for the border which blends nicely with the black background.*/
 }
 
 .fixed-nav {
-  position: fixed;
-  top: 0;
+  position: fixed; /*keeps the element in place as the user scrolls*/
+  top: 0; /*top:0, left:0 will place the element in the top-left corner.*/
   left: 0;
-  margin: auto;
-  width: 100%;
+  margin: auto; /*aligns the element horizontally in its container*/
+  width: 100%; /*makes the element fill the screen by setting its width to 100% of its container*/
 }
 
 #sign-up,
@@ -33,26 +34,30 @@ footer {
   color: #0071eb;
 
 }
-
+/* sets the login icon width, height and fills color with  blue*/
 .login-icon {
   width: 20px;
   height: 20px;
   fill: #0071eb;
 }
 
+/*Left class image size is 40% of container size.*/
 .left a img {
   width: 40%;
   height: 40%;
 }
 
+/*targets "right" class elements and sets a 5% right margin.*/
 .right {
   margin-right: 5%;
 }
 
+/*Below CSS code changes the body element margin to 0 pixels. This eliminates the space between the browser window and the webpage.*/
 body {
   margin: 0px;
 }
 
+/*Below CSS code styles all anchor elements within "left" elements. */
 .left a {
   font-weight: bold;
   text-decoration: none;
@@ -60,16 +65,19 @@ body {
   color: #e4100e;
 }
 
+/*Below CSS code changes the font family and weight of all h2 elements in a div.*/
 div h2 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
 }
 
+/*Below CSS rule sets the font family and weight for all div element paragraphs.*/
 div p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
 }
 
+/*Below CSS code styles anchor elements in the "right" class, suggesting it styles links in a specific webpage section.*/
 .right a {
   text-decoration: none;
   color: #222;
@@ -79,12 +87,14 @@ div p {
   text-transform: uppercase;
 }
 
+/*Below CSS rule sets the height and width of a "log-signup" element to 60% of its parent. The element has a 6% top margin and 0% right, bottom, and left margins.*/
 .log-signup {
   height: 60%;
   width: 60%;
   margin: 6% 0% 0% 0%;
 }
 
+/*Below CSS rule turns a "flex-container" into a row-directed flex container. The font is 30 pixels and centered.*/
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -92,27 +102,22 @@ div p {
   text-align: center;
 }
 
+/*Below CSS code styles a left-aligned flex item. The padding property adds space between the element's content and border, while the flex property sets its flexible length, allowing it to grow or shrink.*/
 .flex-item-left {
   padding: 10px;
   flex: 50%;
 }
 
+/*Below CSS code styles the right flex container item. It sets the background color to dodgerblue and pads all sides with 10 pixels.*/
 .flex-item-right {
   background-color: dodgerblue;
   padding: 10px;
   flex: 50%;
 }
 
-#section1 {
-  margin-top: 7%;
-  background: linear-gradient(-90deg, rgb(255 106 106) -20%, rgb(255, 255, 255) 122%);
-}
 
-#sign-up-section1 {
-  margin-top: 10%;
-  background-image: linear-gradient(-90deg, rgb(231 231 231) -50%, rgb(0 192 255) 200%);
-}
 
+/*Below CSS code sets image dimensions for "img-section1" images. Its width and height are 70% and 100% of its container*/
 .img-section1 {
   width: 70%;
   height: 100%;
@@ -120,6 +125,7 @@ div p {
 
 }
 
+/*Below CSS code styles "img-section2" elements. The first two lines set the element's container width to 100% and height to 86%.*/
 .img-section2 {
   width: 100%;
   height: 86%;
@@ -127,32 +133,60 @@ div p {
   text-align: justify;
 }
 
+/*Below CSS code sets image dimensions for "img-section3" images. Its width and height are 100% and 100% of its container*/
 .img-section3 {
   width: 100%;
   height: 100%;
 }
 
+/*Below CSS code styles a "img-section5" element. The first line sets the width to 52% of the element's container, so the image will take up just over half the space.*/
 .img-section5 {
   width: 52%;
   height: 100%;
   margin-left: 20%;
 }
 
+/*Below CSS code styles a "img-section4" element. The first line sets the width to 52% of the element's container, so the image will take up just over half the space.*/
 .img-section4 {
   width: 52%;
   height: 100%;
 }
 
+.img-section5 {
+  width:65%;
+  height: 100%;
+  margin-left: 20%;
+}
+
+.img-section5 {
+  width:65%;
+  height: 100%;
+  margin-left: 20%;
+}
+
+/*Below CSS code styles "img-section6" element. The first line sets the width to 52% of the element's container, so the image will take up just over half the space.*/
 .img-section6 {
-  width: 52%;
+  width: 65%;
   height: 100%;
 }
 
+/*Below CSS rule styles "section1" HTML elements. For Ex. It adds 7% margin-top to separate the element's top from the preceding content.*/
+#section1 {
+  margin-top: 7%;
+  background: linear-gradient(-90deg, rgb(255 106 106) -20%, rgb(255, 255, 255) 122%);
+}
 
+/*Below CSS applies to "sign-up-section1". It applies a linear gradient background and 10% top margin.*/
+#sign-up-section1 {
+  margin-top: 10%;
+  background-image: linear-gradient(-90deg, rgb(231 231 231) -50%, rgb(0 192 255) 200%);
+}
+/*Below CSS code styles "section2" elements. The code sets the element's background to a linear gradient from light gray to black. The gradient starts at the top of the element and fades down (-90deg).*/
 #section2 {
   background: linear-gradient(-90deg, rgb(231 231 231) -45%, rgb(0 0 0) 200%)
 }
 
+/*Below CSS code styles "section3" elements. The code sets the element's background to a linear gradient from white to bright blue. The gradient starts at the top of the element and fades down (-90deg).*/
 #section3 {
 
   background: linear-gradient(-90deg, rgb(255 255 255) -2%, rgb(0 166 255) 80%);
@@ -160,56 +194,65 @@ div p {
 
 }
 
+/*Below CSS code styles "section4". The code sets the element's background to a light green-to-white linear gradient. The gradient starts at the top of the element and fades down (-90deg).*/
 #section4 {
   background: linear-gradient(-90deg, rgb(163 255 203) -155%, rgb(255, 255, 255) 124%);
 }
 
+/*Below CSS code styles "section5". The code sets the element's background to a linear gradient from white to light blue. The gradient starts at the top of the element and fades down (-90deg).*/
 #section5 {
 
   background: linear-gradient(-90deg, rgb(255 255 255) -6%, rgb(210 235 243) 80%);
 
 }
 
+/*Below CSS code styles "section6" elements. The code sets the element's background to an orange-to-white linear gradient. The gradient starts at the top of the element and fades down (-90deg).*/
 #section6 {
-  background: linear-gradient(-90deg, rgb(255 190 84) 0%, rgb(255, 255, 255) 100%);
+  background: linear-gradient(-90deg, rgb(255 190 84) 0%, rgb(255, 255, 255) 135%);
 }
 
 
 
 /* Css of singup-page and login page */
+/*Below CSS code styles "section1-login" element. The element's margin-top is 7.3%, creating a vertical gap between it and the element above it.*/
 #section1-login {
   margin-top: 7.3%;
   background: linear-gradient(-90deg, rgb(231 231 231) -45%, rgb(0, 208, 255) 200%);
 
 }
 
+/*Below CSS code styles "section1-signup" element. The element's margin-top is 7%, creating a vertical gap between it and the element above it.*/
 #section1-signup {
   margin-top: 7%;
   background: linear-gradient(-90deg, rgb(231 231 231) -45%, rgb(0, 179, 255) 200%);
 
 }
 
+/*Below CSS code sets width, height properties for the login page image.*/
 .img-login {
   width: 87.5%;
   height: 100%;
 }
 
+/*Below CSS code styles "signup-box1-img" elements. The code sets the element width to 100%, making it as wide as its container element.*/
 .singup-box1-img {
   width: 100%;
   height: 100%;
 }
 
+/*Below CSS code sets the "display" property to "flex," making the element a flex container and arranging its children according to flexbox layout rules.*/
 .flex-container-col {
   display: flex;
   flex-direction: column;
 }
 
 
-
+/*Below CSS code pads all child div elements in a flex-container-col element. Padding defines the space between content and the element's border.*/
 .flex-container-col div {
   padding: 2%;
 }
 
+/*Below CSS styles input elements with type=text or type=password that are children of flex-container-col elements.*/
 .flex-container-col input[type=text],
 .flex-container-col input[type=password] {
   width: 100%;
@@ -242,6 +285,7 @@ div p {
   font-weight: 600;
 }
 
+/* Sets the style for elements with class .ml-3 and its child elements of type a */
 .ml-3 {
 
   color: rgb(0, 0, 0);
@@ -261,6 +305,7 @@ div p {
   font-size: 100%;
 }
 
+/* Sets the style for input elements of type submit */
 input[type=submit] {
   width: 100%;
   background-color: #0d7d9b;
@@ -275,6 +320,9 @@ input[type=submit] {
 }
 
 /* About Section*/
+
+/* Sets the style for elements with ids About-section1 to About-section4 */
+/* The sections have different background colors with a gradient effect */
 #About-section1 {
   margin-top: 10%;
 
@@ -297,6 +345,8 @@ input[type=submit] {
   background-image: linear-gradient(110deg, hsl(0, 100%, 68%) -20%, #ffffff00 100%);
 }
 
+/* Sets the style for elements with class .About-img */
+/* Sets a border and border radius for the image */
 .About-img {
   border: 2px solid black;
   border-radius: 50%;
@@ -307,16 +357,22 @@ input[type=submit] {
 
 /* Courses css*/
 
+/* Sets the style for elements with class .card */
+/* Sets a border radius and border for the element */
 .card {
   border-radius: 2%;
   border: 2px solid rgb(171, 171, 171, 0.1);
 }
 
+/* Sets the style for elements with class .card-body */
+/* Sets a top border and margin for the element */
 .card-body {
   border-top: 2px solid rgb(171, 171, 171, 0.1);
   margin-top: -2%;
 }
 
+/* Sets the style for elements with class .card-imag */
+/* Sets a height, width, border, and border radius for the element */
 .card-imag {
   height: 251px;
   width: 100%;
@@ -324,6 +380,10 @@ input[type=submit] {
   border-radius: 1.6%;
 }
 
+/* Below CSS code defines the styling for course text, setting the margin to 0, 
+   font-family to Times New Roman or a fallback font, font-weight to bold, font-size to 
+   0.9rem, color to a dark gray, text-align to left, and setting a left margin of 6% and a 
+   top margin of 4%. */
 .course-font {
   margin: 0px;
   font-family: 'Times New Roman', Times, serif;
@@ -335,6 +395,9 @@ input[type=submit] {
   margin-top: 4%;
 }
 
+/* Below CSS code defines the styling for educator text, setting the margin-top to -2%, 
+   font-family to Trebuchet MS or a fallback font, font-size to 40% of the parent font size, 
+   color to a medium gray, text-align to left, and setting a left margin of 6%. */
 .educator-font {
   margin-top: -2%;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -344,6 +407,8 @@ input[type=submit] {
   margin-left: 6%;
 }
 
+/* Below CSS code defines the styling for a left-aligned star icon, setting the 
+   text-align to left, and setting a left margin of 6% and a top margin of 0px. */
 .star-left {
   text-align: left;
   margin-left: 6%;
@@ -351,22 +416,33 @@ input[type=submit] {
 
 }
 
+/* Below CSS code defines the styling for a horizontal line element, setting the 
+   border to 1px solid with a light gray color and low opacity, width to 90%, and setting 
+   the margin-bottom to 0px. */
 hr {
   border: 1px solid rgba(132, 131, 131, 0.1);
   width: 90%;
   margin-bottom: 0px;
 }
 
+/* Below CSS code defines the styling for card deck containers with IDs of card-deck1, 
+   card-deck2, or card-deck3, setting the margins to 8% for the top, 2% for the right, 
+   2% for the bottom, and 2% for the left. */
 #card-deck1,#card-deck2,#card-deck3 {
   margin: 8% 2% 2% 2%;  /*top right bottom left */
 }
 
+/* Below CSS code defines the styling for centered text and headings inside card body 
+   elements, setting the text-align to center and the margin to 0px. */
 .text-center,
 .card-body h5 {
   text-align: center;
   margin: 0px;
 }
 
+/* Below CSS code defines the styling for unordered lists, list items, and headings in 
+   the footer, setting the list-style to none, font-family to a sans-serif font stack, 
+   font-size to 1.7rem, text-align to left, padding-left to 0px, and margin-bottom to 0px. */
 .flex-item-left ul,
 .flex-item-left li,
 .footer-h5 {
@@ -378,6 +454,8 @@ hr {
   margin-bottom: 0px;
 }
 
+/* Applies to elements with .footer-logo class */
+/* Below CSS code defines the styling for the logo in the footer section of the website. */
 .footer-logo {
   width: 30px;
   height: 30px;
@@ -387,21 +465,25 @@ hr {
 
 
 /* Reviwes_Page */
+/* Below CSS code is for the Reviews page of the website, defining the positioning of a box element. */
 .box {
   margin-top: 100px;
 }
 
+/* Below CSS code changes the style of selected text, making it white with a dark grey background color. */
 ::selection {
   color: #ffffff;
   background-color: #252525;
 }
 
+/* Below CSS code styles the star rating system, aligning it to the right side of the page with a gold color. */
 .stars {
   float: right;
   color: gold;
   margin-right: 20px;
 }
 
+/* Below CSS code is for the Testimonials section of the website, defining its positioning, layout, and width. */
 #testimonials {
   display: flex;
   justify-content: center;
@@ -410,6 +492,7 @@ hr {
   width: 100%;
 }
 
+/* Below CSS code styles the heading of the Testimonials section, with letter spacing, padding, and positioning. */
 .testimonial-heading {
   letter-spacing: 1px;
   margin: 30px 0px;
@@ -420,6 +503,7 @@ hr {
   align-items: center;
 }
 
+/* Below CSS code styles the heading text of the Testimonials section with font size, color, background color, and padding. */
 .testimonial-heading h1 {
   font-size: 2.2rem;
   font-weight: 500;
@@ -428,6 +512,7 @@ hr {
   padding: 10px 20px;
 }
 
+/* Below CSS code styles the subheading text of the Testimonials section with font size, color, margin, letter spacing, and text transformation. */
 .testimonial-heading span {
   font-size: 1.3rem;
   color: #252525;
@@ -436,6 +521,7 @@ hr {
   text-transform: uppercase;
 }
 
+/* Below CSS code defines the layout and positioning of the container for the testimonial boxes. */
 .testimonial-box-container {
   display: flex;
   justify-content: center;
@@ -444,6 +530,7 @@ hr {
   width: 100%;
 }
 
+/* Below CSS code defines the styling for the individual testimonial boxes, with a set width, box shadow, background color, padding, margin, and cursor. */
 .testimonial-box {
   width: 500px;
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
@@ -453,6 +540,7 @@ hr {
   cursor: pointer;
 }
 
+/* Below CSS code defines the styling for the profile image of each testimonial, with a set width, height, border radius, overflow, and margin. */
 .profile-img {
   width: 50px;
   height: 50px;
@@ -461,6 +549,7 @@ hr {
   margin-right: 10px;
 }
 
+/* Below CSS code defines the styling for the image within the profile image container, with a width, height, object fit, and object position. */
 .profile-img img {
   width: 100%;
   height: 100%;
@@ -468,11 +557,13 @@ hr {
   object-position: center;
 }
 
+/* Below CSS code defines the layout and positioning for the name and profile information section of each testimonial. */
 .profile {
   display: flex;
   align-items: center;
 }
 
+/* Below CSS code defines the layout and positioning for the name of each testimonial, with a nested span element for additional text. */
 .name-user {
   display: flex;
   flex-direction: column;
@@ -489,10 +580,12 @@ hr {
   font-size: 0.8rem;
 }
 
+/* Below CSS code defines the styling for the review rating text of each testimonial. */
 .reviews {
   color: #f9d71c;
 }
 
+/* Below CSS code defines the layout and positioning for the top section of each testimonial box, with display, justify-content, align-items, and margin. */
 .box-top {
   display: flex;
   justify-content: space-between;
@@ -500,6 +593,7 @@ hr {
   margin-bottom: 20px;
 }
 
+/* Below CSS code is meant to style the paragraph element inside elements with the class .client-comment. It sets the font size to 0.9rem and the text color to a dark gray. */
 .client-comment p {
   font-size: 0.9rem;
   color: #4b4b4b;
@@ -507,17 +601,19 @@ hr {
 
 
 
-
+/* Below CSS code applies hover effect to elements with the ID #sign-up and to links inside elements with the class .ml-3. When hovering over these elements, the text will be underlined. */
 /* Animations of every page*/
 #sign-up:hover,
 .ml-3 a:hover {
   text-decoration: underline;
 }
 
+/* Below CSS code applies a hover effect to submit buttons. When hovering over the button, the background color will change to a darker shade of blue-green. */
 input[type=submit]:hover {
   background-color: #104a5a
 }
 
+/* Below CSS code applies a hover effect to elements with the class .testimonial-box and to elements with the class .card. When hovering over these elements, they will move up 10 pixels and the transition will be smooth with an ease of 0.3 seconds. */
 .testimonial-box:hover,
 .card:hover {
   transform: translateY(-10px);
@@ -570,7 +666,7 @@ input[type=submit]:hover {
   #About-section1 {
     margin-top: 42%;
   }
-
+  
   .About-img {
     width: 80%;
   }
@@ -695,11 +791,27 @@ input[type=submit]:hover {
 
 }
 
-@media (max-width:420px) {
+@media screen and (max-width:420px) {
   #About-section1 {
     margin-top: 77%;
   }
 
+  #card-deck1 {
+    margin-top: 78%;
+  }
+
+  #section1-signup,
+  #section1-login {
+    margin-top: 70%;
+  }
+}
+@media screen and (max-width:370px) {
+  #About-section1 {
+    margin-top: 69%;
+  }
+   #section1 {
+    margin-top: 71%;
+  }
   #card-deck1 {
     margin-top: 78%;
   }
