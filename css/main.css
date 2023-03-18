@@ -223,6 +223,14 @@ div p {
 
 }
 
+/* Below css is used to align the text */
+.justify-align {
+  margin-left: 3%;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+
 .flex-container-col {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
