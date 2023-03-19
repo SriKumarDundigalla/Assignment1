@@ -1,4 +1,7 @@
-/*Home page , Navbar and Footer*/
+/* 
+  Author: Sri Kumar Dundigalla
+  Description: css related to ome page , Navbar and Footer
+*/
 
 /*Below is Universal selector that sets width and height of all elements that will be calculated based on the content, padding, and border altogether.*/
 * {
@@ -211,9 +214,11 @@ div p {
   background: linear-gradient(-90deg, rgb(255 190 84) 0%, rgb(255, 255, 255) 135%);
 }
 
+/* 
+  Author: Shashank Rao Gujja
+  Description:  Css of singup-page and login page
+*/
 
-
-/* Css of singup-page and login page */
 /*Below CSS code styles "section1-login" element. The element's margin-top is 7.3%, creating a vertical gap between it and the element above it.*/
 #section1-login {
   margin-top: 7.3%;
@@ -325,6 +330,10 @@ input[type=submit] {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 100%;
 }
+/* 
+  Author: Shashank Rao Gujja,Sri Kuamr Dundigalla,Penchala Akshay Kumar Kandagaddala, Yeshwanth Reddy Kesari
+  Description:  Css of About-us Page
+*/
 
 /* About Section*/
 
@@ -361,6 +370,11 @@ input[type=submit] {
   height: 360px;
 
 }
+
+/* 
+  Author: Yeshwanth Reddy Kesari
+  Description:  Css of Courses Page
+*/
 
 /* Courses css*/
 
@@ -470,6 +484,11 @@ hr {
   margin: 2%;
 }
 
+
+/* 
+  Author: Penchala Akshay Kumar Kandagaddala
+  Description:  Css of Reviews Page
+*/
 
 /* Reviwes_Page */
 /* Below CSS code is for the Reviews page of the website, defining the positioning of a box element. */
